@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import emoji from "./Emoji";
+import emojiArray from './emojiArray';
+import EmojiCard from './emojiComponent';
+import SearchBar from './SearchBar';
+import CreateDataList from "./emojiData.jsx"
+
+
+
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>EMOJI SEARCH</h1>
+      <SearchBar />
+      <br />
+     {emojiArray.map(CreateDataList)}
     </div>
   );
 }
