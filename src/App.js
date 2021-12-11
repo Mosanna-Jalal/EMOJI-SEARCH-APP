@@ -18,6 +18,7 @@ function App() {
     <div className="App">
       <h1>EMOJI SEARCH</h1>
       <SearchBar />
+      <h3 id='show'></h3>
       <br />
      {emojiArray.map(CreateDataList)}
     </div>

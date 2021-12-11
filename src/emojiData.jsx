@@ -6,7 +6,7 @@ import emojiArray from "./emojiArray";
   
   return (
     
-    <div>
+    <div id="content">
     <br/>
    {emojiArrayData.name}
    {emojiArrayData.value}
